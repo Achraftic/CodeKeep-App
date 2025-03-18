@@ -1,21 +1,24 @@
+'use client';
 import React from "react";
 import Link from "next/link";
 import ToggleTheme from "./ToggleTheme";
 import clsx from "clsx";
 import { Button } from "./ui/button";
 import { AlignLeft } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 // Navigation links
 const navLinks = [
   { name: "Home", path: "/" },
-  { name: "Features", path: "/features" },
-
+  
   { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
+  { name: "Codes", path: "/codes" },
 ];
 
 const Header = () => {
-  const active = "home"
+  const pathname=usePathname()
+ 
   return (
     <header className="">
       <div className="container mx-auto flex justify-between items-center">
@@ -31,7 +34,7 @@ const Header = () => {
               <li key={link.name}>
                 <Link
                   href={link.path}
-                  className={clsx(" transition-colors hover:text-primary", active === link.name.toLowerCase() && "text-primary")}
+                  className={clsx(" transition-colors hover:text-primary", pathname === link.path && "text-primary")}
                 >
                   {link.name}
                 </Link>

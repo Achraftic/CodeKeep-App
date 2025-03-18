@@ -1,9 +1,6 @@
 import { Button } from "@/components/ui/button";
 import {IoMdArrowForward } from "react-icons/io";
 import Feature from "@/components/Feature";
-import UserCodeEditor from "@/components/UserCodeEditor";
-import { SavedSnippets } from "@/components/SavedSnippets";
-
 
 export default function Home() {
 
@@ -35,8 +32,7 @@ export default function Home() {
       </div>
       <Feature />
     
-     <UserCodeEditor/>
-     <SavedSnippets/>
+   
     </main>
 
   );
