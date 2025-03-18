@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${bricolage.variable} p-6 max-w-5xl text-foreground m-auto font-bricolage antialiased bg-background`}>
+      <body className={`${bricolage.variable} p-6   max-w-5xl text-foreground m-auto font-bricolage antialiased bg-background`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
