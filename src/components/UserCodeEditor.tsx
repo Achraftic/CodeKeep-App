@@ -49,7 +49,7 @@ export default function UserCodeEditor() {
         value={code}
         height="300px"
         extensions={[languageExtensions[language]]}
-        theme={theme}
+        theme={theme ?? "dark"}
      
         onChange={(value) => setCode(value)}
       />
