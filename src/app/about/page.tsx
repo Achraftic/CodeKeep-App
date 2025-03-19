@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client'
-
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -24,7 +23,7 @@ export default function AboutPage() {
         </p>
         
         <div className="flex flex-wrap gap-6 justify-center">
-          <Card className="w-full md:w-64 border-none shadow-lg bg-gradient-to-br from-primary/5 to-primary/10 ">
+          <Card className="w-full md:w-64 border-none shadow-xl shadow-primary/5 bg-gradient-to-br from-primary/5 to-primary/10 ">
             <CardContent className="flex flex-col items-center p-6">
               <div className="bg-primary/10 p-3 rounded-full mb-4">
                 <Code2 className="h-8 w-8 text-primary" />
@@ -34,7 +33,7 @@ export default function AboutPage() {
             </CardContent>
           </Card>
           
-          <Card className="w-full md:w-64 border-none shadow-lg bg-gradient-to-br from-primary/5 to-primary/10">
+          <Card className="w-full md:w-64 border-none shadow-xl shadow-primary/5 bg-gradient-to-br from-primary/5 to-primary/10">
             <CardContent className="flex flex-col items-center p-6">
               <div className="bg-primary/10 p-3 rounded-full mb-4">
                 <Zap className="h-8 w-8 text-primary" />
@@ -44,7 +43,7 @@ export default function AboutPage() {
             </CardContent>
           </Card>
           
-          <Card className="w-full md:w-64 border-none shadow-lg bg-gradient-to-br from-primary/5 to-primary/10">
+          <Card className="w-full md:w-64 border-none shadow-xl shadow-primary/5 bg-gradient-to-br from-primary/5 to-primary/10">
             <CardContent className="flex flex-col items-center p-6">
               <div className="bg-primary/10 p-3 rounded-full mb-4">
                 <Sparkles className="h-8 w-8 text-primary" />

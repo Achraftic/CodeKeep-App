@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <div className="flex flex-col items-center justify-center h-[80vh] max-w-md mx-auto px-4 text-center">
       <div className="mb-6">
-        <AlertCircle className="h-16 w-16 text-red-500 mx-auto mb-1" />
+        <AlertCircle className="h-16 w-16 text-primary mx-auto mb-1" />
       </div>
       
       <h1 className="text-4xl md:text-5xl font-bold mb-2">Page Not Found</h1>
